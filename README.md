@@ -38,11 +38,36 @@ If the contact form's Web3Forms key should work on the deployed build, add
 it as a repo secret: **Settings → Secrets and variables → Actions → New
 repository secret**, name `VITE_WEB3FORMS_ACCESS_KEY`.
 
-Custom domain: enter `irvingrivera.com` under **Settings → Pages → Custom
-domain** — GitHub commits a `CNAME` file for you — then point your DNS at
-GitHub Pages (an apex `A`/`AAAA` record to GitHub's Pages IPs, or a
-`CNAME` record to `irivera-irtsolutions.github.io` for a `www` subdomain).
-GitHub shows the exact records to use once you enter the domain there.
+### Custom domain (irvingrivera.com)
+
+`public/CNAME` (containing `irvingrivera.com`) ships with every build, so
+GitHub Pages knows the domain regardless of what Settings shows — this is
+required for Actions-deployed Pages, where the served files come from the
+workflow's build artifact, not whatever's sitting in the repo root.
+
+1. **At your DNS registrar** (wherever `irvingrivera.com` is registered),
+   add these records:
+
+   | Type | Host | Value |
+   |---|---|---|
+   | A | `@` | `185.199.108.153` |
+   | A | `@` | `185.199.109.153` |
+   | A | `@` | `185.199.110.153` |
+   | A | `@` | `185.199.111.153` |
+   | CNAME | `www` | `irivera-irtsolutions.github.io` |
+
+   (AAAA records for IPv6 are optional — GitHub's docs list
+   `2606:50c0:8000::153` / `8001::153` / `8002::153` / `8003::153` for
+   `@` if you want them.)
+
+2. **In the repo**, go to **Settings → Pages → Custom domain**, type
+   `irvingrivera.com`, and save. GitHub will show a DNS check — it can
+   take anywhere from a few minutes to ~24h to go green depending on DNS
+   propagation. If this is the org's first custom domain, GitHub may ask
+   for a one-time domain verification (a TXT record) before it accepts
+   it — the Settings page walks through that if it comes up.
+3. Once the domain check passes, tick **Enforce HTTPS** (grayed out
+   until GitHub finishes provisioning the certificate).
 
 ### Vercel / Netlify (alternative)
 
