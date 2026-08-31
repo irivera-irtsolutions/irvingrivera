@@ -3,21 +3,52 @@ import { useState } from "react";
 const EMAIL = "IrvingRivera88@gmail.com";
 const PHONE_DISPLAY = "915-497-3434";
 const PHONE_HREF = "9154973434";
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
-// No backend for this site, so the form just builds a mailto: link —
-// it opens the visitor's own mail client with the message pre-filled.
+// Sends straight from the browser via Web3Forms (free tier, no backend of
+// our own needed) — see PLACEHOLDERS.md for how to get an access key.
 export default function Contact() {
   const [name, setName] = useState("");
   const [fromEmail, setFromEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const subject = encodeURIComponent(`Portfolio contact from ${name || "your site"}`);
-    const body = encodeURIComponent(
-      `${message}\n\n—\n${name}\n${fromEmail}`
-    );
-    window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+
+    if (!WEB3FORMS_ACCESS_KEY) {
+      setStatus("error");
+      return;
+    }
+
+    setStatus("sending");
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `Portfolio contact from ${name}`,
+          name,
+          email: fromEmail,
+          message,
+        }),
+      });
+      const result = await response.json();
+      if (result.success) {
+        setStatus("sent");
+        setName("");
+        setFromEmail("");
+        setMessage("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -87,13 +118,19 @@ export default function Contact() {
           </div>
           <button
             type="submit"
-            className="bg-ink px-5 py-3 font-mono text-xs uppercase tracking-wider text-paper transition-colors hover:bg-accent"
+            disabled={status === "sending"}
+            className="bg-ink px-5 py-3 font-mono text-xs uppercase tracking-wider text-paper transition-colors hover:bg-accent disabled:opacity-50"
           >
-            Send
+            {status === "sending" ? "Sending…" : "Send"}
           </button>
-          <p className="font-mono text-xs text-ink-soft">
-            Opens your email app with this pre-filled — nothing is sent from this page directly.
-          </p>
+          {status === "sent" && (
+            <p className="font-mono text-xs text-accent">Message sent. I'll get back to you.</p>
+          )}
+          {status === "error" && (
+            <p className="font-mono text-xs text-rust">
+              Something went wrong — email me directly at {EMAIL} instead.
+            </p>
+          )}
         </form>
       </div>
     </section>
