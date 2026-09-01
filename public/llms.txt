@@ -1,0 +1,17 @@
+# Irving Rivera
+
+> Lead Software Engineer building AI-accelerated software, from enterprise systems to client products.
+
+Irving Rivera is a Lead Software Engineer with 10+ years building software for financial and insurance systems (Allstate, State Farm), and the founder of IRT Solutions LLC. He now builds and ships products — his own and for clients — using AI throughout the development lifecycle: architecture, code generation, testing, and deployment.
+
+## Featured work
+
+- AI Job Agent (flagship, solo-built): an AI-powered job search assistant. Automates job matching, tailors resumes and cover letters, and hands the user a direct application link. Node/Express/Prisma backend, React frontend, Claude API for tailoring. Live at https://job-agent-production-76b5.up.railway.app
+- Sonobe (client project): marketing site for a custom furniture studio in Ciudad Juárez/El Paso, built with AI-assisted development. https://sonobedi.com
+- Holey Donuts (client project): marketing and ordering site for a donut shop in Denton, TX, built with AI-assisted development. https://holeydonutsdenton.com
+
+## Contact
+
+- Email: IrvingRivera88@gmail.com
+- Phone: 915-497-3434
+- Site: https://irvingrivera.com

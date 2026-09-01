@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://irvingrivera.com/sitemap.xml
