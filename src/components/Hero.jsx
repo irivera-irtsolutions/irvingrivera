@@ -20,7 +20,7 @@ export default function Hero() {
         </a>
         <a
           href="/resume.pdf"
-          download
+          download="Irving Rivera Resume.pdf"
           className="border border-ink px-5 py-3 font-mono text-xs uppercase tracking-wider text-ink transition-colors hover:border-accent hover:text-accent"
         >
           Download resume

@@ -25,7 +25,7 @@ export default function Header() {
         </nav>
         <a
           href="/resume.pdf"
-          download
+          download="Irving Rivera Resume.pdf"
           className="font-mono text-xs uppercase tracking-wider text-ink underline decoration-line decoration-2 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
         >
           Resume
