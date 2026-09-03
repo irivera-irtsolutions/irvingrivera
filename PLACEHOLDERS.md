@@ -1,12 +1,11 @@
 # Placeholders needing real assets
 
-## Screenshots (3)
-Each case study card shows a dashed placeholder box instead of a real
-screenshot. Drop images in `public/images/` and swap the
-`ScreenshotPlaceholder` in `src/components/CaseStudyCard.jsx` for an
-`<img>`, or point me at the files and I'll wire it up.
+## Screenshots (2 left)
+AI Job Agent is done (`public/jobagentscreenshot.png`). Sonobe and Holey
+Donuts still show a dashed placeholder box — upload an image to
+`public/` on GitHub (same way as the Job Agent one) and tell me the
+filename, and I'll wire it into `src/content.js`.
 
-- AI Job Agent dashboard/UI
 - Sonobe site
 - Holey Donuts site
 

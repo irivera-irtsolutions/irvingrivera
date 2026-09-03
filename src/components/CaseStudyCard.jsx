@@ -4,7 +4,17 @@ export default function CaseStudyCard({ study, reversed }) {
   return (
     <article className="grid items-center gap-8 border-t border-line py-12 md:grid-cols-2 md:gap-12 md:py-16">
       <div className={reversed ? "md:order-2" : undefined}>
-        <ScreenshotPlaceholder label={study.screenshotNote} />
+        {study.screenshot ? (
+          <div className="flex aspect-[16/10] w-full items-center justify-center border border-line bg-paper-dim">
+            <img
+              src={study.screenshot}
+              alt={study.screenshotAlt}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        ) : (
+          <ScreenshotPlaceholder label={study.screenshotNote} />
+        )}
       </div>
       <div className={reversed ? "md:order-1" : undefined}>
         <p className="font-mono text-xs uppercase tracking-wider text-accent">{study.tag}</p>

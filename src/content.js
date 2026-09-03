@@ -8,8 +8,8 @@ export const caseStudies = [
     summary:
       "I built an AI-powered assistant that automates the job search. It finds roles that match what someone's looking for, writes a tailored resume and cover letter for each one, and hands back a direct link to apply. I built it solo, end to end: a Node/Express/Prisma backend, a React front end, and Claude's API doing the matching and writing. It's live now, running on Railway.",
     stack: "Node.js, Express, Prisma, PostgreSQL, React, Claude API",
-    screenshotAlt: "AI Job Agent dashboard screenshot",
-    screenshotNote: "[NEEDS INPUT: screenshot of the AI Job Agent dashboard/UI]",
+    screenshot: "/jobagentscreenshot.png",
+    screenshotAlt: "AI Job Agent's Applications view, showing tailored applications ready to apply to at companies like UnitedHealth Group, Toyota, and Capital One",
   },
   {
     id: "sonobe",
