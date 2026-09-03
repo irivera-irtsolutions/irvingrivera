@@ -83,4 +83,4 @@ domain in that project's settings.
 ## Outstanding placeholders
 
 See `PLACEHOLDERS.md` for everything still needing real assets
-(screenshots, resume PDF, case study detail).
+(screenshots, case study detail).

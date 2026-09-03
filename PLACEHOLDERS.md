@@ -10,11 +10,6 @@ screenshot. Drop images in `public/images/` and swap the
 - Sonobe site
 - Holey Donuts site
 
-## Resume PDF
-`Header.jsx` and `Hero.jsx` both link to `/resume.pdf`, which doesn't
-exist yet. Drop the real file at `public/resume.pdf` (same filename) and
-the links start working with no code change.
-
 ## Case study copy
 The Sonobe and Holey Donuts write-ups (`src/content.js`) only use the
 facts given in the brief — company, location, and "built with
