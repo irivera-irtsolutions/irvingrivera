@@ -1,13 +1,8 @@
 # Placeholders needing real assets
 
-## Screenshots (2 left)
-AI Job Agent is done (`public/jobagentscreenshot.png`). Sonobe and Holey
-Donuts still show a dashed placeholder box — upload an image to
-`public/` on GitHub (same way as the Job Agent one) and tell me the
-filename, and I'll wire it into `src/content.js`.
-
-- Sonobe site
-- Holey Donuts site
+All three case study screenshots are in. `ScreenshotPlaceholder` stays
+in the code as a fallback for any future case study added without an
+image yet.
 
 ## Case study copy
 The Sonobe and Holey Donuts write-ups (`src/content.js`) only use the

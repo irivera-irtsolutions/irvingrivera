@@ -20,8 +20,8 @@ export const caseStudies = [
     summary:
       "Sonobe is a custom furniture studio working across Ciudad Juárez and El Paso. I built their marketing site with AI-assisted development, from layout to launch, so their catalog and story would have a real home online.",
     stack: "AI-assisted development",
-    screenshotAlt: "Sonobe website screenshot",
-    screenshotNote: "[NEEDS INPUT: screenshot of the Sonobe site]",
+    screenshot: "/sonobedi.png",
+    screenshotAlt: "Sonobe homepage hero: \"furniture drawn before it's built\" next to a photo of founding partner Juan",
   },
   {
     id: "holey-donuts",
@@ -32,7 +32,7 @@ export const caseStudies = [
     summary:
       "Holey Donuts is a donut shop in Denton, Texas. I built their marketing and ordering site with AI-assisted development, handling design, build, and deployment myself.",
     stack: "AI-assisted development",
-    screenshotAlt: "Holey Donuts website screenshot",
-    screenshotNote: "[NEEDS INPUT: screenshot of the Holey Donuts site]",
+    screenshot: "/holeydonutsscreenshot.png",
+    screenshotAlt: "Holey Donuts homepage hero: \"Everyday Sweetness\" with ordering and menu buttons",
   },
 ];
