@@ -11,6 +11,7 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [fromEmail, setFromEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [botcheck, setBotcheck] = useState(false);
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error
 
   const handleSubmit = async (event) => {
@@ -18,6 +19,17 @@ export default function Contact() {
 
     if (!WEB3FORMS_ACCESS_KEY) {
       setStatus("error");
+      return;
+    }
+
+    // Honeypot: real visitors never see or fill this field, so a checked
+    // box means a bot filled every input blindly. Fake success and skip
+    // the API call entirely rather than spending Web3Forms quota on it.
+    if (botcheck) {
+      setStatus("sent");
+      setName("");
+      setFromEmail("");
+      setMessage("");
       return;
     }
 
@@ -35,6 +47,7 @@ export default function Contact() {
           name,
           email: fromEmail,
           message,
+          botcheck,
         }),
       });
       const result = await response.json();
@@ -77,6 +90,16 @@ export default function Contact() {
           </div>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            type="checkbox"
+            name="botcheck"
+            checked={botcheck}
+            onChange={(event) => setBotcheck(event.target.checked)}
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            style={{ display: "none" }}
+          />
           <div>
             <label htmlFor="name" className="font-mono text-xs uppercase tracking-wider text-ink-soft">
               Name
