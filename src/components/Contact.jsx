@@ -1,8 +1,9 @@
 import { useState } from "react";
 
-const EMAIL = "IrvingRivera88@gmail.com";
-const PHONE_DISPLAY = "915-497-3434";
-const PHONE_HREF = "9154973434";
+// Deliberately not rendered anywhere in the page's initial markup — the
+// address is only surfaced if the form itself fails, so visitors always
+// have a fallback without publishing a scrapable mailto: link.
+const FALLBACK_EMAIL = "IrvingRivera88@gmail.com";
 const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
 // Sends straight from the browser via Web3Forms (free tier, no backend of
@@ -71,23 +72,9 @@ export default function Contact() {
       </h2>
       <div className="mt-8 grid gap-12 md:grid-cols-2">
         <div>
-          <p className="text-ink-soft">
-            The fastest way to reach me is directly.
+          <p className="text-lg leading-relaxed text-ink-soft">
+            Send me a note and I'll get back to you.
           </p>
-          <div className="mt-6 space-y-3">
-            <a
-              href={`mailto:${EMAIL}`}
-              className="block font-mono text-sm text-ink underline decoration-line decoration-2 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
-            >
-              {EMAIL}
-            </a>
-            <a
-              href={`tel:+1${PHONE_HREF}`}
-              className="block font-mono text-sm text-ink underline decoration-line decoration-2 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
-            >
-              {PHONE_DISPLAY}
-            </a>
-          </div>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -156,7 +143,7 @@ export default function Contact() {
           )}
           {status === "error" && (
             <p className="font-mono text-xs text-rust">
-              Something went wrong — email me directly at {EMAIL} instead.
+              Something went wrong. Email me directly at {FALLBACK_EMAIL} instead.
             </p>
           )}
         </form>

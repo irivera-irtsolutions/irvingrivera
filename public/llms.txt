@@ -23,5 +23,4 @@ Java, Spring Boot, .NET/C#, ASP.NET MVC, React, AngularJS, Kafka, ServiceNow (sc
 
 ## Contact
 
-- Email: IrvingRivera88@gmail.com
-- Site: https://irvingrivera.com
+Use the contact form at https://irvingrivera.com/#contact
