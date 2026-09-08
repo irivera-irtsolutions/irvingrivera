@@ -106,7 +106,9 @@ export default function Contact() {
             </label>
             <input
               id="name"
+              name="name"
               type="text"
+              autoComplete="name"
               required
               value={name}
               onChange={(event) => setName(event.target.value)}
@@ -119,7 +121,9 @@ export default function Contact() {
             </label>
             <input
               id="email"
+              name="email"
               type="email"
+              autoComplete="email"
               required
               value={fromEmail}
               onChange={(event) => setFromEmail(event.target.value)}
@@ -132,6 +136,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="message"
               required
               rows={4}
               value={message}
