@@ -1,17 +1,27 @@
 # Irving Rivera
 
-> Lead Software Engineer building AI-accelerated software, from enterprise systems to client products.
+> Managing Software Engineer leading claims payment modernization at Allstate, and founder of IRT Solutions LLC.
 
-Irving Rivera is a Lead Software Engineer with 10+ years building software for financial and insurance systems (Allstate, State Farm), and the founder of IRT Solutions LLC. He now builds and ships products — his own and for clients — using AI throughout the development lifecycle: architecture, code generation, testing, and deployment.
+Irving Rivera is a Managing Software Engineer with 10+ years in financial and insurance systems, based in Carrollton, Texas. At Allstate (Claims Technology Services) he leads geographically dispersed Agile teams, splitting his time evenly between hands-on architecture and engineering direction, and leads AI adoption across the team. He is also the founder of IRT Solutions LLC, where he takes on client work as the sole engineer from scoping through delivery. Earlier roles include State Farm, Premier Trailer Leasing, and federal agency consulting work.
 
-## Featured work
+## Enterprise work — Allstate, Managing Software Engineer, Claims Technology Services (2020–present)
 
-- AI Job Agent (flagship, solo-built): an AI-powered job search assistant. Automates job matching, tailors resumes and cover letters, and hands the user a direct application link. Node/Express/Prisma backend, React frontend, Claude API for tailoring. Live at https://job-agent-production-76b5.up.railway.app
-- Sonobe (client project): marketing site for a custom furniture studio in Ciudad Juárez/El Paso, built with AI-assisted development. https://sonobedi.com
-- Holey Donuts (client project): marketing and ordering site for a donut shop in Denton, TX, built with AI-assisted development. https://holeydonutsdenton.com
+- Leads geographically dispersed Agile teams; 50% hands-on architecture, 50% engineering direction.
+- Modernizing legacy VB.NET claims systems onto Java and Spring Boot.
+- Pay.gov payment processing and reconciliation, including validation and audit controls that prevent duplicate payments and meet regulatory requirements.
+- Claims payment transactions processed through Kafka consumers using the Saga pattern; KQL against Azure Data Explorer for pipeline monitoring, feeding Power BI reporting.
+
+## Featured projects
+
+- AI Job Agent (built solo, end to end): an AI-powered job search assistant. Automates job matching, tailors resumes and cover letters, and hands the user a direct application link. Node/Express/Prisma backend, React frontend, Claude API for tailoring. Live at https://job-agent-production-76b5.up.railway.app
+- Sonobe (client project): marketing site for a custom furniture studio in Ciudad Juárez/El Paso, built and shipped as sole engineer. Runs in English and Spanish. https://sonobedi.com
+- Holey Donuts (client project): marketing and ordering site for a donut shop in Denton, TX, design through deployment, including a full Korean translation. https://holeydonutsdenton.com
+
+## Technologies
+
+Java, Spring Boot, .NET/C#, ASP.NET MVC, React, AngularJS, Kafka, ServiceNow (scoped apps), Azure Data Explorer / KQL, MongoDB, SQL Server, AWS, GCP, CI/CD (Harness, Jenkins), LLM APIs (Anthropic Claude, OpenAI).
 
 ## Contact
 
 - Email: IrvingRivera88@gmail.com
-- Phone: 915-497-3434
 - Site: https://irvingrivera.com

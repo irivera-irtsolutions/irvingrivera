@@ -1,4 +1,5 @@
 const links = [
+  { href: "#enterprise", label: "Enterprise" },
   { href: "#work", label: "Work" },
   { href: "#how-i-work", label: "How I Work" },
   { href: "#background", label: "Background" },

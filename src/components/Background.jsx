@@ -7,10 +7,14 @@ export default function Background() {
         </h2>
         <div className="max-w-xl space-y-4 leading-relaxed text-ink-soft">
           <p>
-            I'm a Lead Software Engineer with over ten years building software for financial
-            and insurance systems, including Allstate and State Farm.
+            I'm a Managing Software Engineer with over ten years in financial and insurance
+            systems. Before Allstate I worked at State Farm, Premier Trailer Leasing, and on
+            federal agency systems as a consultant.
           </p>
-          <p>I'm also the founder of IRT Solutions LLC.</p>
+          <p>
+            I'm also the founder of IRT Solutions LLC, where I take on client work as the
+            sole engineer, from scoping through delivery. I'm based in Carrollton, Texas.
+          </p>
           <p>
             That's the short version — the full history is in the resume, not here.
           </p>

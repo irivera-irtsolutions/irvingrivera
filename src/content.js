@@ -18,7 +18,7 @@ export const caseStudies = [
     url: "https://sonobedi.com",
     urlLabel: "sonobedi.com",
     summary:
-      "Sonobe is a custom furniture studio working across Ciudad Juárez and El Paso. I built their marketing site with AI-assisted development, from layout to launch, so their catalog and story would have a real home online.",
+      "Sonobe is a custom furniture studio working across Ciudad Juárez and El Paso. I scoped, designed, and shipped their marketing site as the only engineer on it. It runs in English and Spanish, since their clients are on both sides of the border.",
     stack: "AI-assisted development",
     screenshot: "/sonobedi.png",
     screenshotAlt: "Sonobe homepage hero: \"furniture drawn before it's built\" next to a photo of founding partner Juan",
@@ -30,7 +30,7 @@ export const caseStudies = [
     url: "https://holeydonutsdenton.com",
     urlLabel: "holeydonutsdenton.com",
     summary:
-      "Holey Donuts is a donut shop in Denton, Texas. I built their marketing and ordering site with AI-assisted development, handling design, build, and deployment myself.",
+      "Holey Donuts is a donut shop in Denton, Texas. I built their marketing and ordering site, handling design through deployment myself, including a Korean translation of the whole site.",
     stack: "AI-assisted development",
     screenshot: "/holeydonutsscreenshot.png",
     screenshotAlt: "Holey Donuts homepage hero: \"Everyday Sweetness\" with ordering and menu buttons",

@@ -1,5 +1,6 @@
 import Background from "./components/Background";
 import Contact from "./components/Contact";
+import EnterpriseWork from "./components/EnterpriseWork";
 import FeaturedWork from "./components/FeaturedWork";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <EnterpriseWork />
         <FeaturedWork />
         <HowIWork />
         <Background />

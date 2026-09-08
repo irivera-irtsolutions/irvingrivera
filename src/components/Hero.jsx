@@ -1,15 +1,17 @@
 export default function Hero() {
   return (
     <section id="top" className="mx-auto max-w-5xl px-6 pb-20 pt-16 md:pb-28 md:pt-24">
-      <p className="font-mono text-xs uppercase tracking-wider text-accent">Software Engineer</p>
+      <p className="font-mono text-xs uppercase tracking-wider text-accent">
+        Managing Software Engineer
+      </p>
       <h1 className="mt-4 max-w-3xl font-display text-4xl font-medium leading-[1.1] tracking-tight text-ink md:text-6xl">
-        Lead Software Engineer building AI-accelerated software — from enterprise systems to
-        client products.
+        I lead the teams modernizing insurance claims payments — and ship my own software on
+        the side.
       </h1>
       <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-        Ten-plus years building software for large financial and insurance companies. These
-        days I use AI throughout the process to build and ship real products, on my own and
-        for clients.
+        Ten-plus years in financial and insurance systems. At Allstate I lead distributed
+        Agile teams moving legacy claims platforms onto Java and Spring Boot. Through my own
+        company, IRT Solutions, I scope and deliver client software end to end.
       </p>
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <a
