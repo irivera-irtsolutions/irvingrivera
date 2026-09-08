@@ -1,8 +1,8 @@
 # Irving Rivera
 
-> Managing Software Engineer leading claims payment modernization at Allstate, and founder of IRT Solutions LLC.
+> Managing Software Engineer leading enterprise modernization teams, and founder of IRT Solutions LLC.
 
-Irving Rivera is a Managing Software Engineer with 10+ years in financial and insurance systems, based in Carrollton, Texas. At Allstate (Claims Technology Services) he leads geographically dispersed Agile teams, splitting his time evenly between hands-on architecture and engineering direction, and leads AI adoption across the team. He is also the founder of IRT Solutions LLC, where he takes on client work as the sole engineer from scoping through delivery. Earlier roles include State Farm, Premier Trailer Leasing, and federal agency consulting work.
+Irving Rivera is a Managing Software Engineer with 10+ years building software for large financial and insurance companies, based in Carrollton, Texas. At Allstate he leads geographically dispersed Agile teams on legacy modernization and payments work, splitting his time evenly between hands-on architecture and engineering direction, and leads AI adoption across the team. He is also the founder of IRT Solutions LLC, where he takes on client work as the sole engineer from scoping through delivery. Earlier roles include State Farm, Premier Trailer Leasing, and federal agency consulting work.
 
 ## Enterprise work — Allstate, Managing Software Engineer, Claims Technology Services (2020–present)
 

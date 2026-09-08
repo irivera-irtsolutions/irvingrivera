@@ -7,7 +7,7 @@ const points = [
   },
   {
     label: "Modernization",
-    body: "We're moving legacy VB.NET claims systems onto Java and Spring Boot.",
+    body: "We're moving legacy VB.NET systems onto Java and Spring Boot.",
   },
   {
     label: "Payments",
@@ -15,7 +15,7 @@ const points = [
   },
   {
     label: "Distributed systems",
-    body: "Claims payment transactions run through Kafka consumers using the Saga pattern. I write KQL against Azure Data Explorer to monitor that pipeline, feeding Power BI reporting.",
+    body: "Payment transactions run through Kafka consumers using the Saga pattern. I write KQL against Azure Data Explorer to monitor that pipeline, feeding Power BI reporting.",
   },
 ];
 
