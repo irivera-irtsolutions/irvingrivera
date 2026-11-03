@@ -26,4 +26,4 @@ Java, Spring Boot, .NET/C#, VB.NET, Node.js, Express, React, Kafka, ServiceNow (
 
 ## Contact
 
-Use the contact form at https://irvingrivera.com/#contact
+Use the contact form at https://irvingrivera.com/#contact, or LinkedIn: https://www.linkedin.com/in/irving-rivera/
