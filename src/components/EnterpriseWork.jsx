@@ -1,9 +1,10 @@
-// Facts here come strictly from the resume (public at /resume.pdf) and are
-// kept at the same level of generality it uses — no internal specifics.
+// Facts here come strictly from the resume (public at /resume.pdf) and from
+// Irving directly, kept at the same level of generality the resume uses —
+// no internal system names or specifics.
 const points = [
   {
     label: "Team",
-    body: "I lead geographically dispersed Agile teams, splitting my time evenly between hands-on architecture and engineering direction. I also lead AI adoption across the team.",
+    body: "I lead geographically dispersed Agile teams, splitting my time evenly between hands-on architecture and engineering direction. I manage and mentor developers, including performance management, calibration, and goal setting, and I lead AI adoption across the team.",
   },
   {
     label: "Modernization",
@@ -15,7 +16,15 @@ const points = [
   },
   {
     label: "Distributed systems",
-    body: "Payment transactions run through Kafka consumers using the Saga pattern. I write KQL against Azure Data Explorer to monitor that pipeline, feeding Power BI reporting.",
+    body: "Payment transactions run through Kafka consumers using the Saga pattern, with compensating steps when part of a transaction fails.",
+  },
+  {
+    label: "Reliability",
+    body: "I lead investigations of production incidents and payment failures, run the root-cause analysis, and drive the long-term fixes.",
+  },
+  {
+    label: "Observability",
+    body: "I moved our payment KPI monitoring from Splunk to Fabric and Power BI, consolidating 21 Splunk searches into KQL and DAX with rolling thresholds that track normal volume.",
   },
 ];
 

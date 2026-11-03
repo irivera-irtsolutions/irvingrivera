@@ -6,8 +6,8 @@ export const caseStudies = [
     url: "https://job-agent-production-76b5.up.railway.app",
     urlLabel: "job-agent-production-76b5.up.railway.app",
     summary:
-      "I built an AI-powered assistant that automates the job search. It finds roles that match what someone's looking for, writes a tailored resume and cover letter for each one, and hands back a direct link to apply. I built it solo, end to end: a Node/Express/Prisma backend, a React front end, and Claude's API doing the matching and writing. It's live now, running on Railway.",
-    stack: "Node.js, Express, Prisma, PostgreSQL, React, Claude API",
+      "I built an AI-powered assistant that automates the job search. It finds matching roles, vets each one, writes a tailored resume and cover letter, and hands back a direct link to apply. The AI does the judgment work, but code makes the final call: hard scoring caps, company website checks, per-user spending limits, and a person approving each step before anything moves forward. I built it solo, end to end, and it's live on Railway.",
+    stack: "Node.js, Express, Prisma, PostgreSQL, React, Clerk, Stripe, Claude API",
     screenshot: "/jobagentscreenshot.png",
     screenshotAlt: "AI Job Agent's Applications view, showing tailored applications ready to apply to at companies like UnitedHealth Group, Toyota, and Capital One",
   },

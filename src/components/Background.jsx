@@ -12,8 +12,9 @@ export default function Background() {
             federal agency systems as a consultant.
           </p>
           <p>
-            I'm also the founder of IRT Solutions LLC, where I take on client work as the
-            sole engineer, from scoping through delivery. I'm based in Carrollton, Texas.
+            Outside my day job I build independent projects, like the AI Job Agent, and the
+            occasional client site, from scoping through delivery. I'm based in Carrollton,
+            Texas.
           </p>
           <p>
             That's the short version — the full history is in the resume, not here.

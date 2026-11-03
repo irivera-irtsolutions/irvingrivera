@@ -5,13 +5,13 @@ export default function Hero() {
         Managing Software Engineer
       </p>
       <h1 className="mt-4 max-w-3xl font-display text-4xl font-medium leading-[1.1] tracking-tight text-ink md:text-6xl">
-        I lead engineering teams modernizing enterprise systems — and ship my own products on
-        the side.
+        I lead engineering teams modernizing enterprise systems — and I still build software
+        myself.
       </h1>
       <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
         Ten-plus years building software for large financial and insurance companies. I lead
-        distributed teams on legacy modernization and payments work, and through my own
-        company, IRT Solutions, I scope and ship client software end to end.
+        distributed teams on legacy modernization and payments work, and I build independent
+        projects and client sites end to end.
       </p>
       <div className="mt-8 flex flex-wrap items-center gap-4">
         <a
