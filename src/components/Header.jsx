@@ -24,13 +24,23 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        <a
-          href="/resume.pdf"
-          download="Irving Rivera Resume.pdf"
-          className="font-mono text-xs uppercase tracking-wider text-ink underline decoration-line decoration-2 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
-        >
-          Resume
-        </a>
+        <div className="flex items-center gap-5">
+          <a
+            href="https://www.linkedin.com/in/irving-rivera/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-xs uppercase tracking-wider text-ink-soft transition-colors hover:text-accent"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="/resume.pdf"
+            download="Irving Rivera Resume.pdf"
+            className="font-mono text-xs uppercase tracking-wider text-ink underline decoration-line decoration-2 underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </header>
   );

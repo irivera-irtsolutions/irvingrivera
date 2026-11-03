@@ -75,6 +75,18 @@ export default function Contact() {
           <p className="text-lg leading-relaxed text-ink-soft">
             Send me a note and I'll get back to you.
           </p>
+          <p className="mt-4 text-lg leading-relaxed text-ink-soft">
+            Or find me on{" "}
+            <a
+              href="https://www.linkedin.com/in/irving-rivera/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink underline decoration-line decoration-2 underline-offset-4 hover:text-accent hover:decoration-accent"
+            >
+              LinkedIn
+            </a>
+            .
+          </p>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
